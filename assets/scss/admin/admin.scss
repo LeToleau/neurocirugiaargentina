@@ -1,0 +1,56 @@
+.acf-fc-layout-handle {
+    display: flex !important;
+    align-items: center;
+}
+
+.acf-module {
+    display: flex;
+    align-items: center;
+
+    &__thumbnail {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        transition: .2s all;
+        margin-left: 10px;
+        z-index: 9998;
+        background-color: white;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 100%;
+            transition: .3s all;
+        }
+
+        &:hover {
+            z-index: 9999;
+
+            .acf-module__thumbnail-wrapper {
+                width: 250px;
+                height: 250px;
+                transform: translateX(50%) translateY(-50%);
+                border: 6px solid #ccd0d4;
+            }
+        }
+    }
+
+    &__thumbnail-wrapper {
+        border-radius: 100%;
+        border: 1px solid #ccd0d4;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        transition: .2s all;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__title {
+        margin-left: 10px;
+    }
+}

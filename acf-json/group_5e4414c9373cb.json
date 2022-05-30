@@ -1,0 +1,126 @@
+{
+    "key": "group_5e4414c9373cb",
+    "title": "Support: Appearance",
+    "fields": [
+        {
+            "key": "field_5e4db455fe860",
+            "label": "Appearance Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60759cab27369",
+            "label": "ID Module",
+            "name": "anchor",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e441e1c9ca33",
+            "label": "Padding Options",
+            "name": "padding_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_5e441e529ca35",
+                    "label": "Padding Top",
+                    "name": "padding_top",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "padding--top-0": "None (0px)",
+                        "padding--top-small": "Small (25px)",
+                        "padding--top-default": "Default (50px)",
+                        "padding--top-large": "Large (100px)"
+                    },
+                    "allow_null": 0,
+                    "default_value": "padding--top-0",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5e441e8f9ca36",
+                    "label": "Padding Bottom",
+                    "name": "padding_bottom",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "padding--bottom-0": "None (0px)",
+                        "padding--bottom-small": "Small (25px)",
+                        "padding--bottom-default": "Default (50px)",
+                        "padding--bottom-large": "Large (100px)"
+                    },
+                    "allow_null": 0,
+                    "default_value": "padding--top-0",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1652644940
+}

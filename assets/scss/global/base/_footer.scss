@@ -1,0 +1,62 @@
+.b-footer{
+    background-color: #444;
+    padding: 80px 0;
+
+    &__container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    &__brand{
+        color: $primary;
+    }
+
+    &__menu{
+        .menu-item-has-children{
+            a{
+                display: none;
+            }
+
+            .menu-item{
+                margin: 5px 0;
+                a{
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                }
+            }
+        }
+
+        .menu-item{
+            margin: 5px 0;
+            a{
+                font-size: 18px;
+                line-height: 24px;
+                text-decoration: none;
+                color: white;
+                display: block;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__message {
+        &-text {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .yt-username {
+            color: white !important;
+            font-size: 18px;
+        }
+    }
+
+}

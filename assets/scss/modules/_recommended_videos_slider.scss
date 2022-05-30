@@ -1,0 +1,107 @@
+.m-recommended-videos {
+    background-color: rgb(180, 180, 180);
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 96px;
+    }
+
+    &__heading {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            text-align: center;
+            font-size: 50px;
+            line-height: 58px;
+            margin-bottom: 20px;
+            font-weight: 800;
+            color: $white;
+        }
+    
+        &-copy {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        &-cta {
+            background-color: transparent;
+            font-weight: 800;
+            border: 1px solid white;
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color: $primary;
+            }
+        }
+    }
+
+    &__video {
+        max-height: 323px !important;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        transition: all 1s;
+        border-radius: 3.2px;
+
+        &:hover {
+
+            background: rgba(41, 39, 39, 0.363);
+            transition: all 1s;
+
+            .m-recommended-videos__video-thumbnail {
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+
+            .m-recommended-videos__video-title {
+               opacity: 1;
+                transition: all 0.5s;
+            }
+        }
+
+        &-title {
+            opacity: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 22px;
+            transition: all 0.5s;
+        }
+
+        &-thumbnail {
+            position: relative;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            max-height: inherit;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+
+        &-play-icon {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            bottom: 0;
+            margin: auto;
+            transition: all 0.25s;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.25s;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 60px;
+    }
+}

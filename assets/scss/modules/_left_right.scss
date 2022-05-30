@@ -1,0 +1,22 @@
+.m-left-right {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 50px;
+
+        &--reverse-order {
+            direction: rtl;
+        }
+    }
+
+    &__text-content {
+
+        &-title {}
+
+        &-description {}
+    }
+
+    &__media-content {}
+
+}

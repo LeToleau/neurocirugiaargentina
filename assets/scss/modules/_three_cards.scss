@@ -1,0 +1,87 @@
+.m-three-cards {
+    background-color: $white;
+    &__container {
+        padding: 85px 120px;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 50px;
+        line-height: 58px;
+        margin-bottom: 20px;
+        font-weight: 800;
+        color: $primary;
+    }
+
+    &__copy {
+        text-align: center;
+        color: $primary;
+    }
+
+    &__cards-repeater {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__card {
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .5s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        &:hover {
+            color: white;
+            transition: all .5s;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+            .button {
+                background-color: #3f83bf;
+                color: white;
+                border: 1.5px solid white;
+                transition: all .5s;
+
+                &:hover {
+                    background-color: #9cf4df;
+                    color: #3f83bf;
+                    border: 1.5px solid #3f83bf;
+                    transition: all .5s;
+                }
+            }
+
+            .m-three-cards__card-title,
+            .m-three-cards__card-copy {
+                color: $white;
+                transition: all .5s;
+            }
+        }
+
+        &-icon {
+            max-width: 100px;
+            max-height: 100px;
+            margin-bottom: 20px;
+        }
+    
+        &-title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            color: $primary;
+            cursor: default;
+            transition: all .5s;
+        }
+    
+        &-copy {
+            text-align: center;
+            margin-bottom: 20px;
+            color: $primary;
+            cursor: default;
+            transition: all .5s;
+        }
+    }
+}

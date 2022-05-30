@@ -1,0 +1,71 @@
+.m-slider {
+  position: relative;
+  background-color: black;
+
+  .container {
+    max-width: none;
+    width: 100vw;
+    padding: 0;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 89vh;
+    vertical-align: top;
+  }
+
+  &__text-wrapper {
+    max-width: 791px;
+    max-height: max-content;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 9;
+    background-color: rgba(54, 114, 163, 0.753);
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  &__title,
+  &__copy {
+    font-family: VarelaRound;
+    text-align: left;
+    color: white;
+  }
+  
+  &__title {
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 62px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 8px;
+      background-color: #9cf4df;
+      width: 100%;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+  }
+
+  &__copy {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  /*.swiper-button-prev,
+  .swiper-button-next {
+    background-color: transparent;
+    border: none;
+
+    &:after {
+      color: skyblue;
+    }
+  }*/
+}
