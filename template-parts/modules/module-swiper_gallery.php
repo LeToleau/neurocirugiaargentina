@@ -19,7 +19,8 @@
           </div>
         <?php endforeach; ?>
       </div>
-
+      
+      <div class="m-slider__pre-text"></div>
       <div class="m-slider__text-wrapper">
         <h2 class="m-slider__title"><?= esc_html($title); ?></h2>
         <p class="m-slider__copy"><?= esc_html($copy); ?></p>

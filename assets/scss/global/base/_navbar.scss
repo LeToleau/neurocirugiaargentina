@@ -136,21 +136,21 @@
 
             //Link styles
             a {
-                color: $primary;
+                color: $tertiary;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: 18px;
                 transition: all .5s;
 
                 &:hover {
-                    color: $secondary;
+                    color: $pale;
                     transition: all .5s;
                 }
             }
 
             //Active page item (<li>)
             [current-page="true"] {
-                color: $secondary;
+                color: $pale;
                 font-weight: 600;
                 transition: all .5s;
             }

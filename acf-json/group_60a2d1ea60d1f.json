@@ -308,6 +308,13 @@
                 "operator": "==",
                 "value": "templates\/flexible-page.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
         ]
     ],
     "menu_order": 0,
@@ -319,5 +326,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653891449
+    "modified": 1654226443
 }

@@ -15,16 +15,28 @@
     vertical-align: top;
   }
 
+  &__pre-text {
+    width: 752px;
+    height: 200px;
+    z-index: 1;
+    background-color: $pale;
+    padding: 30px;
+    border-radius: 11px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+
   &__text-wrapper {
     max-width: 791px;
     max-height: max-content;
     position: absolute;
     bottom: 50px;
     left: 50px;
-    z-index: 9;
-    background-color: rgba(54, 114, 163, 0.753);
+    z-index: 1;
+    background-color: $tertiary;
     padding: 30px;
-    border-radius: 30px;
+    border-radius: 11px;
   }
 
   &__title,
@@ -46,7 +58,7 @@
       content: '';
       display: block;
       height: 8px;
-      background-color: #9cf4df;
+      background-color: $pale;
       width: 100%;
       border-radius: 4px;
       margin-top: 20px;
