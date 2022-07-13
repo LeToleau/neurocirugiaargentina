@@ -12,7 +12,7 @@ class Navbar{
                 const links = menu.querySelectorAll('.menu-item > a');
         
                 //Setting space from top of the page
-                document.querySelector('body').style.paddingTop = brandingHeight + 'px';
+                //document.querySelector('body').style.paddingTop = brandingHeight + 'px';
         
                 //Dinamic padding for menu (Mobile)
                 if (window.innerWidth <= 992) {
@@ -96,6 +96,7 @@ class Navbar{
                 });
         
                 //Change background on scroll
+                /*
                 window.addEventListener('scroll', function () {
                     //console.log(navbar)
                     if (window.scrollY > 1) {
@@ -104,6 +105,7 @@ class Navbar{
                         navbar.classList.remove('scrolled')
                     }
                 });
+                */
         
             });
         

@@ -8,10 +8,8 @@
     width: 100%;
     transition: .3s all;
     box-shadow: 0 0 10px #444;
+    background-color: $white;
 
-    &.scrolled {
-        background-color: $white;
-    }
 
     &__container {
         display: flex;

@@ -1,0 +1,106 @@
+{
+    "key": "group_62b71e959d6aa",
+    "title": "Page: Videos",
+    "fields": [
+        {
+            "key": "field_62b808ef4c8af",
+            "label": "Videos Flexible Content",
+            "name": "videos_flexible_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_62b80905b8615": {
+                    "key": "layout_62b80905b8615",
+                    "name": "swiper_gallery",
+                    "label": "Swiper Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62b809174c8b0",
+                            "label": "Swiper Gallery",
+                            "name": "swiper_gallery",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_61f2ed73b29db"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62b825906853f": {
+                    "key": "layout_62b825906853f",
+                    "name": "youtube_invite",
+                    "label": "Youtube Invite",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62b8259068540",
+                            "label": "Youtube Invite",
+                            "name": "youtube_invite",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62b824a2eb141"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/page-videos_channel.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1656235455
+}

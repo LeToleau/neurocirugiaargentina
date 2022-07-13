@@ -8,7 +8,7 @@ import Posts from "../app/modules/posts";
 import Video from "../app/modules/video";
 import SwiperGallery from "../app/modules/swiper_gallery";
 import RecommendedVideos from "../app/modules/recommended_videos_slider";
-import VideoModal from "../app/modules/video-modal";
+import VideoModal from "../app/modules/video-modal"
 
 //Dynamic js load
 moduleCaller([{

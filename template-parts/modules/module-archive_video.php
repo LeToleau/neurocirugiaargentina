@@ -9,7 +9,8 @@
     );
 ?>
 
-<section class="m-video-archive">
+<section class="m-video-archive js-video-modal">
+    <h2>Videos del Canal</h2>
     <div class="m-video-archive__container container">
         <?php
  
@@ -27,8 +28,8 @@
                     ?>
 
 
-                    <div class="m-video-archive__card">
-                        <div class="m-video-archive__card-img-container">
+                    <div class="m-video-archive__card js-card" data-modal="<?php echo $videoID; ?>">
+                        <div data-modal="<?php echo $videoID ?>" class="m-video-archive__card-img-container js-open-modal">
                             <img class="m-video-archive__card-placeholder placeholder" src="<?php echo $placeholder ? esc_url($placeholder['url']) : esc_url($thumbnailUrl); ?>" alt="Video Thumbnail">
                             <img class="m-video-archive__card-play-icon play-icon" src="<?= get_template_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="Play Icon">
                         </div>
@@ -37,6 +38,11 @@
                             <p><?= esc_html($videoDescription); ?></p>
                         </div>
 
+                    </div>
+                    <div class="c-video-modal" id=<?php echo $videoID; ?> style="display: none;">
+                        <div class="c-video-modal__wrapper">
+                            <iframe width="850" height="478" src="https://www.youtube.com/embed/<?php echo $videoID ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                     
                 <?php

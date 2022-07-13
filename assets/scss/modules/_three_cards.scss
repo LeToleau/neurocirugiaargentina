@@ -14,17 +14,18 @@
         line-height: 58px;
         margin-bottom: 20px;
         font-weight: 800;
-        color: $primary;
+        color: #3f83bf;
     }
 
     &__copy {
         text-align: center;
-        color: $primary;
+        color: #3f83bf;
     }
 
     &__cards-repeater {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
     }
 
     &__card {
@@ -56,8 +57,8 @@
 
             .m-three-cards__card-title,
             .m-three-cards__card-copy {
-                color: $white;
                 transition: all .5s;
+                color: white;
             }
         }
 
@@ -71,7 +72,7 @@
             font-size: 30px;
             line-height: 40px;
             margin-bottom: 20px;
-            color: $primary;
+            color: #3f83bf;
             cursor: default;
             transition: all .5s;
         }
@@ -79,7 +80,7 @@
         &-copy {
             text-align: center;
             margin-bottom: 20px;
-            color: $primary;
+            color: #3f83bf;
             cursor: default;
             transition: all .5s;
         }
