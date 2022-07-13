@@ -31,12 +31,13 @@
         &-cta {
             background-color: transparent;
             font-weight: 800;
-            border: 1px solid white;
-            color: white;
+            border: 1px solid #3f83bf;
+            color: #3f83bf;
 
             &:hover {
-                background-color: white;
-                color: $primary;
+                background-color: #abd8ff;
+                border: 1px solid $pale;
+                color: $pale;
             }
         }
     }
@@ -103,32 +104,32 @@
         }
     }
 
-    .c-video-modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100vw;
-        background-color: #10101093;
-        z-index: 2;
-
-        &__wrapper {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            z-index: 1;
-
-            iframe {
-                position: relative;
-                z-index: 3;
-            }
-        }
-    }
-
     .swiper-pagination {
         bottom: 60px;
+    }
+}
+
+.c-video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #10101093;
+    z-index: 2;
+
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+
+        iframe {
+            position: relative;
+            z-index: 3;
+        }
     }
 }
