@@ -1,0 +1,75 @@
+{
+    "key": "group_62b84882538ce",
+    "title": "Page: Libros",
+    "fields": [
+        {
+            "key": "field_62b84891835ce",
+            "label": "Libros Flexible Content",
+            "name": "books_flexible_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_62b848abf1f74": {
+                    "key": "layout_62b848abf1f74",
+                    "name": "swiper_gallery",
+                    "label": "Swiper Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62b848bd835cf",
+                            "label": "Swiper Gallery",
+                            "name": "swiper_gallery",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_61f2ed73b29db"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/page-books-channel.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1656244482
+}

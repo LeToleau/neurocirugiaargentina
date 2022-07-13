@@ -47,6 +47,21 @@ function create_posttype() {
   
         )
     );
+
+    register_post_type( 'libros',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Libros' ),
+                'singular_name' => __( 'Libro' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'libros'),
+            'show_in_rest' => true,
+  
+        )
+    );
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
@@ -54,6 +69,9 @@ add_action( 'init', 'create_posttype' );
 function init_remove_support(){
     $post_type = 'videos';
     remove_post_type_support( $post_type, 'editor');
+    $other_post_type = 'libros';
+    remove_post_type_support( $other_post_type, 'editor');
+
 }
 add_action('init', 'init_remove_support',100);
 
