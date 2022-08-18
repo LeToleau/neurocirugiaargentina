@@ -1,30 +1,39 @@
-<?php
-    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-
-    $args = array(
-        'post_type' => 'videos',
-        'post_status' => 'publish',
-        'posts_per_page' => 9,
-        'paged' => $paged
-    );
-?>
-
 <section class="m-video-archive js-video-modal">
     <h2>Videos del Canal</h2>
+    <?php get_template_part('template-parts/cards/card', 'alphabetic'); ?>
     <div class="m-video-archive__container container">
         <?php
- 
-            $videoQuery = new WP_Query( $args );
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+            if(isset($_POST['abc-filter']) && $_POST['abc-filter'] != 'Todos' && $paged > 0) {
+                $letter = $_POST['abc-filter'];
+        
+                $letterQuery = new WP_Query( array(
+                    'post_type' => 'videos',
+                    'starts_with' => $letter,
+                    'posts_per_page' => 9,
+                    'paged' => $paged
+                ) );
+            } elseif($paged > 0) { 
+                $letterQuery = new WP_Query( array(
+                    'post_type' => 'videos',
+                    'posts_per_page' => 9,
+                    'paged' => $paged
+                ) );
+            }
             
-            if ( $videoQuery->have_posts() ) :
-                while ( $videoQuery->have_posts() ) :
-                    $videoQuery->the_post(); 
+            if ( $letterQuery->have_posts() ) :
+                while ( $letterQuery->have_posts() ) :
+                    $letterQuery->the_post(); 
                     $videoUrl = get_field('video_embed'); 
                     $videoDescription = get_field('video_description');
                     $placeholder = get_field('placeholder_image'); 
 
                     $videoID = get_ID_from_embed($videoUrl); //get ID from embed video
                     $thumbnailUrl = 'http://img.youtube.com/vi/'.$videoID.'/0.jpg'; //apply ID on thumbnail url
+
+                    $my_title = get_the_title();
+                    // Get the first character using substr.
+                    $firstCharacter = substr($my_title, 0, 1);
                     ?>
 
 
@@ -49,7 +58,9 @@
                 endwhile;
             else :
                 // no posts found
-            endif; ?>
+            endif;
+                wp_reset_postdata();
+            ?>
     </div>
     <div class="pagination">
         <?php
@@ -58,15 +69,10 @@
                 'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
                 'format' => '?paged=%#%',
                 'current' => max( 1, get_query_var('paged') ),
-                'total' => $videoQuery->max_num_pages,
+                'total' => $letterQuery->max_num_pages,
                 'prev_text' => '&laquo;',
                 'next_text' => '&raquo;'
             ) );
         ?>
     </div> 
-        <?php
-
-        wp_reset_postdata();
-
-        ?>
 </section>

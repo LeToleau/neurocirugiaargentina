@@ -9,6 +9,7 @@ import Video from "../app/modules/video";
 import SwiperGallery from "../app/modules/swiper_gallery";
 import RecommendedVideos from "../app/modules/recommended_videos_slider";
 import VideoModal from "../app/modules/video-modal"
+import PapersArchive from "../app/modules/papers-archive"
 
 //Dynamic js load
 moduleCaller([{
@@ -30,5 +31,9 @@ moduleCaller([{
     {
         domModule: '.js-video-modal',
         classModule: VideoModal
+    },
+    {
+        domModule: '.js-papers-archive',
+        classModule: PapersArchive
     }
 ]);

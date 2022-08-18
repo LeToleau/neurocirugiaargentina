@@ -9,7 +9,7 @@ import Video from "../app/modules/video";
 import SwiperGallery from "../app/modules/swiper_gallery";
 import RecommendedVideos from "../app/modules/recommended_videos_slider";
 import VideoModal from "../app/modules/video-modal"
-import VideosArchive from "../app/modules/papers-archive"
+import BooksArchive from "../app/modules/papers-archive"
 
 //Dynamic js load
 moduleCaller([{
@@ -33,7 +33,7 @@ moduleCaller([{
         classModule: VideoModal
     },
     {
-        domModule: '.js-video-modal',
-        classModule: VideosArchive
+        domModule: '.js-book-archive',
+        classModule: BooksArchive
     }
 ]);

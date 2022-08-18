@@ -9,7 +9,7 @@
     );
 ?>
 
-<section class="m-book-archive">
+<section class="m-book-archive js-book-archive">
     <h2>Libros del Canal</h2>
     <div class="m-book-archive__container container">
         <?php
@@ -23,6 +23,11 @@
                     $author = get_field('book_author');
                     $downloadLink = get_field('book_download_link');
                     $previewLink = get_field('book_online_view_link');
+
+                    $my_title = get_the_title();
+                    // Get the first character using substr.
+                    $firstCharacter = substr($my_title, 0, 1);
+                    echo $firstCharacter;
                     ?>
 
 
