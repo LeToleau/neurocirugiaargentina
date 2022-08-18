@@ -7,7 +7,7 @@ $title = get_sub_field('title');
     <div class="container">
 
         <?php if ($title) : ?>
-            <h2 class="m-papers-archive__title title-secondary"><?= is_tax() ? single_cat_title('Latest ') : esc_html($title) ?></h2>
+            <h2 class="m-papers-archive__title title-secondary"><?= esc_html($title) ?></h2>
         <?php endif; ?>
 
         <?php
