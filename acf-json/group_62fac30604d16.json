@@ -5,7 +5,7 @@
         {
             "key": "field_62fac311b86e2",
             "label": "Author",
-            "name": "author",
+            "name": "papers_author",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -89,5 +89,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660602152
+    "modified": 1660790021
 }

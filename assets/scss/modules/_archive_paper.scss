@@ -1,0 +1,10 @@
+.m-papers-archive {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .c-pagination__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+}
