@@ -14,6 +14,7 @@ class VideoModal{
         for(let i = 0; i < card.length; i++) {
             card[i].addEventListener('click', () => {
                 card[i].getAttribute('data-modal');
+                document.querySelector('.module--recommended_videos_slider');
                 let iframe = document.getElementById(card[i].getAttribute('data-modal'));
                 iframe.style.display = 'block';
                 iframe.addEventListener('click', () => {

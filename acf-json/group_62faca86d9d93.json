@@ -1,0 +1,199 @@
+{
+    "key": "group_62faca86d9d93",
+    "title": "Page: Papers",
+    "fields": [
+        {
+            "key": "field_62faca86e3955",
+            "label": "Papers Flexible Content",
+            "name": "papers_flexible_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_62b848abf1f74": {
+                    "key": "layout_62b848abf1f74",
+                    "name": "swiper_gallery",
+                    "label": "Swiper Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62faca86eb136",
+                            "label": "Swiper Gallery",
+                            "name": "swiper_gallery",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_61f2ed73b29db"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62facaee47c83": {
+                    "key": "layout_62facaee47c83",
+                    "name": "recommended_videos_slider",
+                    "label": "Recommended Videos Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62facaee47c84",
+                            "label": "Recommended Videos Slider",
+                            "name": "recommended_videos_slider",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62945ebe60d17"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62fdcf65d8202": {
+                    "key": "layout_62fdcf65d8202",
+                    "name": "archive_papers",
+                    "label": "Papers Archive",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62fdcf65d8203",
+                            "label": "Papers Archive",
+                            "name": "archive_papers",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62fdce6d57cd8"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62facb4147c85": {
+                    "key": "layout_62facb4147c85",
+                    "name": "featured_books",
+                    "label": "Featured Books",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62facb4147c86",
+                            "label": "Featured Books",
+                            "name": "featured_books",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62b87eec098e3"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_62facb8947c87": {
+                    "key": "layout_62facb8947c87",
+                    "name": "youtube_invite",
+                    "label": "Youtube Invite",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62facb8947c88",
+                            "label": "Youtube Invite",
+                            "name": "youtube_invite",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62b824a2eb141"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/page-papers_channel.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1660800914
+}

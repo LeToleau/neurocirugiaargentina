@@ -46,6 +46,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_62fdcf130c4da": {
+                    "key": "layout_62fdcf130c4da",
+                    "name": "archive_book",
+                    "label": "Libros Archive",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62fdcf130c4db",
+                            "label": "Libros Archive",
+                            "name": "archive_book",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62fdce1d7013f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -56,9 +87,9 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
-                "value": "templates\/page-books-channel.php"
+                "value": "templates\/page-books_channel.php"
             }
         ]
     ],
@@ -71,5 +102,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1656244482
+    "modified": 1660801026
 }

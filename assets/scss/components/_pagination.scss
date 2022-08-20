@@ -66,6 +66,7 @@
     &__search{
         width: 200px;
 
+
         @include respond-below(md) {
             width: 100%;
             order: -1;
@@ -73,8 +74,21 @@
         }
 
         input{
+            font-family: $font;
+            font-size: 16px;
+            color: $primary;
             width: 100%;
-            padding: 10px;
+            padding: 10px 15px;
+            border-radius: 24px;
+            border: 1.5px solid $paler-pale;
+            outline: none;
+            transition: all .5s;
+
+            &:focus-visible,
+            &:focus {
+                border: 1.5px solid $primary;
+                transition: all .5s;
+            }
         }
     }
 
@@ -105,21 +119,24 @@
     }
 
     &__controllers {
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        justify-content: center;
 
         .prev-page,
         .next-page {
             background-color: transparent;
             border: initial;
-            font-family: $font;
+            font-family: $font-secondary;
             font-size: 15px;
             cursor: pointer;
             transition: .3s all;
+            color: $primary;
 
             &:hover{
-                color: $primary;
+                color: $black;
             }
 
             @include respond-below(sm){
@@ -148,6 +165,7 @@
     &__pages {
         display: flex;
         flex-flow: row wrap;
+        font-family: $font;
 
         &.has-prev-hidden-buttons {
             &::before {
@@ -158,6 +176,7 @@
                 justify-content: center;
                 align-items: flex-end;
                 letter-spacing: 3px;
+                color: $primary;
 
                 @include respond-below(sm){
                     font-size: 12px;
@@ -174,6 +193,7 @@
                 justify-content: center;
                 align-items: flex-end;
                 letter-spacing: 3px;
+                color: $primary;
 
                 @include respond-below(sm){
                     font-size: 12px;
@@ -182,18 +202,19 @@
         }
 
         .page {
-            width: 40px;
-            height: 40px;
-            background-color: map-get($greys, 'light');
-            color: $black;
+            width: 35px;
+            height: 35px;
+            background-color: $paler-pale;
+            color: $white;
             border: initial;
+            border-radius: 100%;
             outline: initial;
             cursor: pointer;
             margin-right: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 15px;
+            font-size: 16px;
             line-height: 1em;
 
             @include respond-below(sm){

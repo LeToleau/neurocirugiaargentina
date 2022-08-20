@@ -1,11 +1,22 @@
-<section class="m-video-archive js-video-modal">
-    <h2>Videos del Canal</h2>
-    <div class="m-video-archive__container container">
-        <?php AdvancedPagination::print(
+<?php
+$title = get_sub_field('title');
+?>
+
+<div class="m-papers-archive js-papers-archive">
+
+    <div class="container">
+
+        <?php if ($title) : ?>
+            <h2 class="m-papers-archive__title title-secondary"><?= esc_html($title) ?></h2>
+        <?php endif; ?>
+
+        <?php
+
+        AdvancedPagination::print(
             array(
-                'post_type' => 'videos',
+                'post_type' => 'papers',
                 'posts_per_page' => 9,
-                'component' => 'video',
+                'component' => 'paper',
                 'no_results_message' => 'No se encontraron resultados.',
                 //'next_button' => get_svg('/assets/img/icons/arrow-lite-grey.svg'),
                 //'prev_button' => get_svg('/assets/img/icons/arrow-lite-grey.svg'),
@@ -13,7 +24,7 @@
                 'numbers_limit' => 3,
                 'search' => true,
                 'search_opt' => array(
-                    'placeholder' => 'Buscar video...',
+                    'placeholder' => 'Buscar Paper...',
                     'append' => ''
                 ),
                 'filters' => true,
@@ -23,6 +34,10 @@
                     'title' => false
                 )
             )
-        ); ?>
+        );
+
+        ?>
+
     </div>
-</section>
+
+</div>

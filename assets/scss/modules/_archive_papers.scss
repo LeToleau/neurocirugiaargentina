@@ -1,8 +1,8 @@
-.m-book-archive {
+.m-papers-archive {
     padding-top: 120px;
     padding-bottom: 120px;
 
-    h2 {
+    .container>h2 {
         font-size: 30px;
         line-height: 42px;
         color: $primary;
@@ -13,8 +13,7 @@
 
     .c-pagination__container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 25px;
+        grid-template-columns: 1fr;
         row-gap: 10px;
     }
 }
