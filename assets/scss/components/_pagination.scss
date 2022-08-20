@@ -65,6 +65,7 @@
 
     &__search{
         width: 200px;
+        position: relative;
 
 
         @include respond-below(md) {
@@ -80,15 +81,25 @@
             width: 100%;
             padding: 10px 15px;
             border-radius: 24px;
-            border: 1.5px solid $paler-pale;
+            border: 1px solid map-get($greys, 'dark');
             outline: none;
             transition: all .5s;
+            padding-left: 40px;
 
             &:focus-visible,
             &:focus {
-                border: 1.5px solid $primary;
+                border: 1px solid $primary;
                 transition: all .5s;
             }
+        }
+
+        .search-icon {
+            height: 20px;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
         }
     }
 
