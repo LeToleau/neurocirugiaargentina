@@ -112,6 +112,7 @@ add_action('init', 'init_remove_support',100);
 
 // Shows which template is being used at any page
 // DELETE AFTER DEV STAGE 
+/*
 function meks_which_template_is_loaded() {
 	if ( is_super_admin() ) {
 		global $template;
@@ -119,7 +120,7 @@ function meks_which_template_is_loaded() {
 	}
 }
  
-add_action( 'wp_footer', 'meks_which_template_is_loaded' );
+add_action( 'wp_footer', 'meks_which_template_is_loaded' ); */
 
 // Get ID from videos for showing them in modals
 function get_ID_from_embed($url) {

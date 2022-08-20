@@ -23,8 +23,10 @@
     }
 
     &__cards-repeater {
-        display: grid;
+        /*display: grid;
         grid-template-columns: repeat(2, 40%);
+        justify-content: center;*/
+        display: flex;
         justify-content: center;
     }
 
@@ -35,6 +37,7 @@
         align-items: center;
         transition: all .5s;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        max-width: 348px;
 
         &:hover {
             color: white;

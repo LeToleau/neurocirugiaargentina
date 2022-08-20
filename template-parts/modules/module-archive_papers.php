@@ -7,7 +7,7 @@ $title = get_sub_field('title');
     <div class="container">
 
         <?php if ($title) : ?>
-            <h2 class="m-papers-archive__title title-secondary"><?= is_tax() ? single_cat_title('Latest ') : esc_html($title) ?></h2>
+            <h2 class="m-papers-archive__title title-secondary"><?= esc_html($title) ?></h2>
         <?php endif; ?>
 
         <?php
@@ -16,15 +16,15 @@ $title = get_sub_field('title');
             array(
                 'post_type' => 'papers',
                 'posts_per_page' => 9,
-                'component' => 'post',
-                'no_results_message' => __('No results found.', 'imago'),
+                'component' => 'paper',
+                'no_results_message' => 'No se encontraron resultados.',
                 //'next_button' => get_svg('/assets/img/icons/arrow-lite-grey.svg'),
                 //'prev_button' => get_svg('/assets/img/icons/arrow-lite-grey.svg'),
                 'loader_color' => '#115FAC',
                 'numbers_limit' => 3,
                 'search' => true,
                 'search_opt' => array(
-                    'placeholder' => __('Search', 'imago'),
+                    'placeholder' => 'Buscar Paper...',
                     'append' => ''
                 ),
                 'filters' => true,

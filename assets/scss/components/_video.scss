@@ -1,0 +1,76 @@
+.c-video {
+    &-img-container {
+        max-height: 220px !important;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        transition: all 1s;
+        border-radius: 3.2px;
+
+        &:hover {
+
+            background: rgba(41, 39, 39, 0.363);
+            transition: all 1s;
+
+            .placeholder {
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    &-placeholder {
+        position: relative;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        max-height: inherit;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+
+    &-play-icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        bottom: 0;
+        margin: auto;
+        transform: scale(0.8);
+        transition: all 0.25s;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+    }
+
+    &-info {
+        h4,
+        p {
+            color: #696969;
+        }
+
+        h4 {
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 21px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+            transition: all .5s;
+
+            &:hover {
+                color: #101010;
+                transition: all .5s;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

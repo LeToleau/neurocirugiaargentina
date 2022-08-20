@@ -373,7 +373,7 @@ class AdvancedPagination {
   }
 
   call(reloadController = false) {
-    this.scrollTop();
+    //this.scrollTop();
     this.setUrl();
     this.loader();
     this.pageNumbersLimiter();

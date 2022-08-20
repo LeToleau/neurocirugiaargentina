@@ -28,10 +28,7 @@ get_header();
 		get_template_part('template-parts/modules/module', $module);
 		include(get_template_directory() . '/template-parts/components/component-module_end.php');
 
-	endwhile;
-
-	get_template_part('template-parts/modules/module', 'archive_book');
-	?>
+	endwhile; ?>
 
 </main><!-- #main -->
 

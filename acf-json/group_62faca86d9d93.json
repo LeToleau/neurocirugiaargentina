@@ -78,6 +78,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_62fdcf65d8202": {
+                    "key": "layout_62fdcf65d8202",
+                    "name": "archive_papers",
+                    "label": "Papers Archive",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62fdcf65d8203",
+                            "label": "Papers Archive",
+                            "name": "archive_papers",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62fdce6d57cd8"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_62facb4147c85": {
                     "key": "layout_62facb4147c85",
                     "name": "featured_books",
@@ -164,5 +195,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660604202
+    "modified": 1660800914
 }
