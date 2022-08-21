@@ -73,6 +73,7 @@
             left: 20px;
             color: white;
             font-size: 22px;
+            line-height: 26px;
             transition: all 0.5s;
         }
 
@@ -106,6 +107,7 @@
 
     .swiper-pagination {
         bottom: 60px;
+        z-index: 2;
     }
 }
 
