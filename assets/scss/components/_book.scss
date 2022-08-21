@@ -1,11 +1,12 @@
 .c-book {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     padding: 10px;
     border-radius: 10px;
     background-color: #00000005;
 
     &-img-container {
-        max-height: 180px !important;
+        max-height: 280px !important;
         position: relative;
         overflow: hidden;
         transition: all 1s;
@@ -13,7 +14,10 @@
         margin-right: 25px;
 
         img {
-            max-height: 180px !important;
+            max-height: 280px !important;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
     }
 
@@ -52,6 +56,13 @@
        &:hover {
            background-color: #3f83bf;
            color: white;
+       }
+
+       &:last-child {
+        &:hover {
+            background-color: map-get($greys, 'dark');
+            border: 1.5px solid map-get($greys, 'dark');
+        }
        }
     }
 
