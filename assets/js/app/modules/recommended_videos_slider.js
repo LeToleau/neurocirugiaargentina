@@ -18,7 +18,6 @@ class RecommendedVideos {
     init() {
         this.runSlider();
         this.runVideo();
-        console.log(this.videoContainer);
     }
 
     runSlider() {
