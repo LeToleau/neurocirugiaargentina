@@ -25,7 +25,7 @@ $title = get_sub_field('title');
                 'search' => true,
                 'search_opt' => array(
                     'placeholder' => 'Buscar Paper...',
-                    'append' => ''
+                    'append' => '<img class="search-icon" src="'. get_template_directory_uri() .'/assets/img/icons/search-icon.svg" >'
                 ),
                 'filters' => true,
                 'filters_opt' => array(
