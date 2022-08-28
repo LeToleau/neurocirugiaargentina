@@ -9,11 +9,11 @@
 
 <article class="c-paper">
     <div class="c-paper__img-container">
-        <a class="c-paper__link" href="">
+        <a class="c-paper__link" href="<?= esc_url($onlineViewLink['url']) ?>">
             <span>Ver Online</span>
             <img class="online-view" src="<?= get_template_directory_uri(); ?>/assets/img/icons/pdf-icon.png" alt="">
         </a>
-        <a class="c-paper__link" href="">
+        <a class="c-paper__link" href="<?= esc_url($downloadLink['url']) ?>">
             <img class="download" src="<?= get_template_directory_uri(); ?>/assets/img/icons/download-icon.png" alt="">
             <span>Descargar</span>
         </a>
