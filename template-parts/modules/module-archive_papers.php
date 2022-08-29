@@ -15,7 +15,7 @@ $title = get_sub_field('title');
         AdvancedPagination::print(
             array(
                 'post_type' => 'papers',
-                'posts_per_page' => 9,
+                'posts_per_page' => 8,
                 'component' => 'paper',
                 'no_results_message' => 'No se encontraron resultados.',
                 //'next_button' => get_svg('/assets/img/icons/arrow-lite-grey.svg'),

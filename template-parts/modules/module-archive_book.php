@@ -16,7 +16,7 @@
         <?php AdvancedPagination::print(
             array(
                 'post_type' => 'libros',
-                'posts_per_page' => 9,
+                'posts_per_page' => 8,
                 'component' => 'book',
                 'no_results_message' => 'No se encontraron resultados.',
                 //'next_button' => get_svg('/assets/img/icons/arrow-lite-grey.svg'),
