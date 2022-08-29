@@ -85,6 +85,16 @@
         }
     }
 
+    .swiper-pagination {
+        bottom: 200px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        border: none;
+        background-color: transparent;
+    }
+
     &__cta-container {
         display: flex;
         width: 100%;
