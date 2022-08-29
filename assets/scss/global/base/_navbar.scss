@@ -21,6 +21,10 @@
     &__logo {
         cursor: pointer;
         max-width: 200px;
+
+        @include respond-below('sm') {
+            max-width: 170px;
+        }
     }
 
     //Mobile button for expand the dropdown
