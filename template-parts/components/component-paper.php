@@ -1,6 +1,7 @@
 <?php 
     $post = $newpost; 
     $title = get_the_title($post);
+    $otherTitle = get_field('featured_papers_title', $post->ID);
     $author = get_field('papers_author', $post->ID);
     $description = get_field('papers_description', $post->ID);
     $downloadLink = get_field('papers_download_link', $post->ID);

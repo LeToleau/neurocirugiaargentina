@@ -1,0 +1,39 @@
+.m-featured-papers {
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 50px;
+        line-height: 58px;
+        margin-bottom: 30px;
+        font-weight: 800;
+        color: #3f83bf;
+
+        @include respond-below('sl') {
+            font-size: 40px;
+        }
+    }
+
+    &__copy {
+        font-size: 16px;
+        text-align: center;
+        color: #3f83bf;
+        margin-bottom: 20px;
+    }
+
+    &__posts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

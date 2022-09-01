@@ -4,4 +4,10 @@
 @import "../modules/youtube_invite";
 @import "../components/video";
 @import "../components/pagination";
-@import "../modules/featured_books"
+@import "../modules/featured_books";
+@import "../modules/featured_papers";
+@import "../components/paper";
+
+.m-featured-papers {
+    background-color: rgb(226, 226, 226);
+}
