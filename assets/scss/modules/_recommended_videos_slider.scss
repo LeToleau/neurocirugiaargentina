@@ -61,11 +61,11 @@
 
         &:hover {
 
-            background: rgba(41, 39, 39, 0.363);
-            transition: all 1s;
+            background: rgba(19, 18, 18, 0.582);
+            transition: all .7s;
 
             .m-recommended-videos__video-thumbnail {
-                transform: scale(1.1);
+                transform: scale(1.07);
                 transition: all 0.5s;
             }
 
@@ -126,7 +126,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #10101093;
+    background-color: #101010b7;
     z-index: 2;
 
     &__wrapper {

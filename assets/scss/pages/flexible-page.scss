@@ -1,9 +1,13 @@
 @import "../global/global";
-@import "../modules/left_right";
 @import "../modules/swiper_gallery";
 @import "../modules/three_cards";
 @import "../modules/intro";
 @import "../modules/video_slider";
 @import "../modules/recommended_videos_slider";
-@import "../modules/archive_video";
 @import "../modules/featured_books";
+@import "../modules/featured_papers";
+@import "../components/paper";
+
+.m-featured-papers {
+    background-color: rgb(226, 226, 226);
+}
