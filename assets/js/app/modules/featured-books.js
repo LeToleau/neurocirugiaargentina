@@ -34,6 +34,11 @@ class FeaturedBooks {
             navigation: {
                 nextEl: this.next,
                 prevEl: this.prev,
+            },
+            breakpoints: {
+                768: {
+                  slidesPerView: 3
+                }
             }
         });
     }
