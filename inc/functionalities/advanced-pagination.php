@@ -144,14 +144,14 @@ class AdvancedPagination
             'post_type' => 'post',
             'posts_per_page' => 4,
             'component' => 'post',
-            'no_results_message' => __('Nothing Found...', 'wcanvas-boilerplate'),
+            'no_results_message' => __('Nothing Found...', 'neurocirugia-argentina'),
             'next_button' => 'Next >',
             'prev_button' => '< Prev',
             'loader_color' => '#444',
             'numbers_limit' => 3,
             'search' => false,
             'search_opt' => array(
-                'placeholder' => __('Search...', 'wcanvas-boilerplate'),
+                'placeholder' => __('Search...', 'neurocirugia-argentina'),
                 'append' => ''
             ),
             'filters' => false,
@@ -226,7 +226,7 @@ class AdvancedPagination
         }
 
         //Search
-        $inputPlaceholder = __($opt['search_opt']['placeholder'], 'wcanvas-boilerplate');
+        $inputPlaceholder = __($opt['search_opt']['placeholder'], 'neurocirugia-argentina');
         $inputAppendElement = $opt['search_opt']['append'];
         $search = !$opt['search'] ? '' : "<div class='c-pagination__search'>
         <input class='js-search-posts' type='text' placeholder='$inputPlaceholder'>
@@ -258,7 +258,7 @@ class AdvancedPagination
                     $filterAppend = $opt['filters_opt']['append'] ? "<span class='c-pagination__filter-append'>" . $opt['filters_opt']['append'] . "</span>" : '';
                     $filterTitle = $opt['filters_opt']['title'] ? "<span class='c-pagination__filter-title'>" . get_taxonomy($filter)->label . "</span>" : '';
         
-                    $currentTerm = isset($_GET[$filter]) ? $_GET[$filter] : __('All', 'wcanvas-boilerplate');
+                    $currentTerm = isset($_GET[$filter]) ? $_GET[$filter] : __('All', 'neurocirugia-argentina');
                     $filterBox = "<div class='c-pagination__filter js-posts-taxonomy' taxonomy='$filter'>
                     $filterTitle
                     <div class='c-pagination__filter-current js-current-taxonomy'>$filterPreppend<span class='js-current-taxname'>$currentTerm</span>$filterAppend</div>
@@ -284,8 +284,14 @@ class AdvancedPagination
         echo "<div class='c-pagination js-post-pagination' post_type='$post_type' prev='$prevBtn' next='$nextBtn' limit='$numbersLimit' no_results_message='$noResultsMessage'>
         $filters
         $search
+        <div class='c-video-modal js-reco-videos-modal' style='display: none;'>
+            <div class='c-video-modal__wrapper js-video-container'>
+                <img src='" . get_template_directory_uri() . "/assets/img/icons/close-icon.svg' alt='Close Icon'>
+                <iframe width='850' height='478' src='' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+            </div>
+        </div>  
         <div class='c-pagination__container js-posts' posts_per_page='$postsPerPage' page='$currentPage' pages='$pages' component='$component' loader_color='$loaderColor'>
-            $postsData
+            $postsData  
         </div>
         $controller
         </div>";

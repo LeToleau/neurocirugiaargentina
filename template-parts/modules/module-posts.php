@@ -19,7 +19,7 @@
                 'numbers_limit' => 3,
                 'search' => true,
                 'search_opt' => array(
-                    'placeholder' => __('Search...', 'wcanvas-boilerplate'),
+                    'placeholder' => __('Search...', 'neurocirugia-argentina'),
                     'append' => ''
                 ),
                 'filters' => true,

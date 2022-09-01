@@ -3,6 +3,10 @@
     &__container {
         padding: 85px 120px;
 
+        @include respond-below('l') {
+            padding: 85px 45px;
+        }
+
         @include respond-below('sl') {
             padding: 70px 40px;
         }

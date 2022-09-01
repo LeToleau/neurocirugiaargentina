@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package wcanvas_Boilerplate
+ * @package NEUROCIRUGIA_ARGENTINA
  */
 
 get_header();
@@ -18,7 +18,7 @@ get_header();
 					<div class="container-lg">
 						<div class="row">
 							<div class="col">
-								<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'wcanvas-boilerplate' ); ?></h1>
+								<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'neurocirugia-argentina' ); ?></h1>
 							</div>
 						</div>
 					</div>
@@ -28,7 +28,7 @@ get_header();
 					<div class="container-lg">
 						<div class="row">
 							<div class="col">
-								<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wcanvas-boilerplate' ); ?></p>
+								<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'neurocirugia-argentina' ); ?></p>
 
 								<?php
 								get_search_form();
@@ -37,7 +37,7 @@ get_header();
 								?>
 
 								<div class="widget widget_categories">
-									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'wcanvas-boilerplate' ); ?></h2>
+									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'neurocirugia-argentina' ); ?></h2>
 									<ul>
 										<?php
 										wp_list_categories(
@@ -55,8 +55,8 @@ get_header();
 
 								<?php
 								/* translators: %1$s: smiley */
-								$wcanvas_boilerplate_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'wcanvas-boilerplate' ), convert_smilies( ':)' ) ) . '</p>';
-								the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$wcanvas_boilerplate_archive_content" );
+								$neurocirugia_argentina_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'neurocirugia-argentina' ), convert_smilies( ':)' ) ) . '</p>';
+								the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$neurocirugia_argentina_archive_content" );
 
 								the_widget( 'WP_Widget_Tag_Cloud' );
 								?>

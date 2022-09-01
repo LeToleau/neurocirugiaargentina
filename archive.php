@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package wcanvas_Boilerplate
+ * @package NEUROCIRUGIA_ARGENTINA
  */
 
 get_header();

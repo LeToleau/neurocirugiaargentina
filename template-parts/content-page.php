@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package wcanvas_Boilerplate
+ * @package NEUROCIRUGIA_ARGENTINA
  */
 
 ?>
@@ -32,7 +32,7 @@
 
 					wp_link_pages(
 						array(
-							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wcanvas-boilerplate' ),
+							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'neurocirugia-argentina' ),
 							'after'  => '</div>',
 						)
 					);
@@ -49,7 +49,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'wcanvas-boilerplate' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'neurocirugia-argentina' ),
 						array(
 							'span' => array(
 								'class' => array(),

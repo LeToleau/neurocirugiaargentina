@@ -108,6 +108,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_630eb01132c46": {
+                    "key": "layout_630eb01132c46",
+                    "name": "featured_books",
+                    "label": "Featured Books",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_630eb01132c47",
+                            "label": "Featured Books",
+                            "name": "featured_books",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62b87eec098e3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -133,5 +164,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660800762
+    "modified": 1661906998
 }

@@ -41,9 +41,6 @@
             endif; 
             ?>
     </div>
-    <div class="c-video-modal js-reco-videos-modal" style="display: none;">
-        <div class="c-video-modal__wrapper js-video-container">
-            <iframe width="850" height="478" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
+
+    <?php get_template_part('template-parts/components/component', 'video_modal') ?>
 </div>

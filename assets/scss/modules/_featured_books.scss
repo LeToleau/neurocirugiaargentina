@@ -1,4 +1,6 @@
 .m-featured-books {
+    position: relative;
+    
     &__container {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -19,7 +21,7 @@
     }
 
     &__image-wrapper {
-        height: 64%;
+        height: 62%;
         width: 100%;
         overflow: hidden;
         margin-bottom: 10px;
@@ -39,17 +41,33 @@
         height: 34%;
         padding: 10px;
 
+        @include respond-below('sl') {
+            height: 53%;
+        }
+
         h4 {
             font-size: 16px;
             font-weight: 800;
             line-height: 22px;
             margin-bottom: 8px;
+
+            @include respond-below('sl') {
+                font-size: 15px;
+                line-height: 16px;
+                letter-spacing: -0.5px;
+            }
         }
 
         p {
             font-style: italic;
             color: rgb(56, 56, 56);
             font-weight: 100;
+
+            @include respond-below('l') {
+                font-size: 15px;
+                line-height: 16px;
+                letter-spacing: -0.5px;
+            }
         }
     }
 
@@ -60,12 +78,21 @@
         margin-bottom: 20px;
         font-weight: 800;
         color: #3f83bf;
+
+        @include respond-below('l') {
+            font-size: 40px;
+            line-height: 48px;
+        }
     }
 
     &__copy {
         color: #3f83bf;
         text-align: center;
         margin-bottom: 40px;
+
+        @include respond-below('sl') {
+            height: 53%;
+        }
     }
 
     &__buttons {
@@ -93,6 +120,7 @@
     .swiper-button-next {
         border: none;
         background-color: transparent;
+        transition: all .5s;
     }
 
     &__cta-container {

@@ -4,7 +4,7 @@
     $featBooks = get_sub_field('featured_books');
 ?>
 
-<section class="m-featured-books js-featured-books">
+<div class="m-featured-books js-featured-books">
     <div class="m-featured-books__container container">
         <div class="m-featured-books__heading">
             <h2 class="m-featured-books__title"><?= esc_html($title); ?></h2>
@@ -50,4 +50,4 @@
         </div>
 
     </div>
-</section>
+</div>

@@ -10,11 +10,11 @@ class AlphaOmega{
 	}
 
 	function _activation(){
-		do_action( 'wcanvas-boilerplate/activate' );
+		do_action( 'neurocirugia-argentina/activate' );
 	}
 
 	function _deactivation(){
-		do_action( 'wcanvas-boilerplate/deactivate' );
+		do_action( 'neurocirugia-argentina/deactivate' );
 	}
 
 }

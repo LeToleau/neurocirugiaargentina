@@ -4,7 +4,7 @@
     $image = get_sub_field('invite_featured_image');
 ?>
 
-<section class="m-youtube-invite">
+<div class="m-youtube-invite">
     <div class="m-youtube-invite__container container">
         <img class="m-youtube-invite__img" src="<?= esc_url($image['url']); ?>" alt="">
         <div class="m-youtube-invite__text-wrapper">
@@ -14,4 +14,4 @@
             <div class="g-ytsubscribe" data-channelid="UCJ2bSwtZHCuA2XZmn-NLQyw" data-layout="full"  data-theme="light" data-count="hidden"></div>
         </div>
     </div>
-</section>
+</div>

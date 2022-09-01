@@ -105,14 +105,14 @@ class ThemeSettings
         }
 
         //Load Styles
-        wp_enqueue_style('wcanvas-boilerplate-page-style', get_theme_file_uri($cssFile),  array(), filemtime($absolutePath['css']));
+        wp_enqueue_style('neurocirugia-argentina-page-style', get_theme_file_uri($cssFile),  array(), filemtime($absolutePath['css']));
 
         //Load Scripts
-        wp_enqueue_script('wcanvas-boilerplate-main', get_theme_file_uri($jsFile), get_field('use_jquery', 'option') ? array('jquery') : null, filemtime($absolutePath['js']), true);
+        wp_enqueue_script('neurocirugia-argentina-main', get_theme_file_uri($jsFile), get_field('use_jquery', 'option') ? array('jquery') : null, filemtime($absolutePath['js']), true);
 
         //Spa Scripts
         if (get_field('spa_web_page', 'option')) {
-            wp_enqueue_script('wcanvas-boilerplate-theme-page-spa', get_theme_file_uri($buildFilesPath . 'spa-webpage.min.js'),  array(), filemtime($absolutePath['spa'] . 'spa-webpage.min.js'), true);
+            wp_enqueue_script('neurocirugia-argentina-theme-page-spa', get_theme_file_uri($buildFilesPath . 'spa-webpage.min.js'),  array(), filemtime($absolutePath['spa'] . 'spa-webpage.min.js'), true);
         }
 
         //Optional google maps api
@@ -122,12 +122,12 @@ class ThemeSettings
         }
 
         // Load API vars to Axios
-        wp_localize_script('wcanvas-boilerplate-main', 'wcanvasBoilerplate', array(
+        wp_localize_script('neurocirugia-argentina-main', 'neurocirugiaArgentina', array(
             'rootapiurl' => esc_url_raw(rest_url()),
             'nonce' => wp_create_nonce('wp_rest')
         ));
 
-        wp_localize_script('wcanvas-boilerplate-main', 'ajax', array(
+        wp_localize_script('neurocirugia-argentina-main', 'ajax', array(
             'url' => admin_url('admin-ajax.php')
         ));
 
@@ -140,7 +140,7 @@ class ThemeSettings
     {
         $buildFilesPath = '/assets/build/';
         $cssFile = "{$buildFilesPath}admin.min.css";
-        wp_enqueue_style('wcanvas-boilerplate-page-style', get_theme_file_uri($cssFile),  array(), filemtime(get_template_directory() . $buildFilesPath . 'admin.min.css'));
+        wp_enqueue_style('neurocirugia-argentina-page-style', get_theme_file_uri($cssFile),  array(), filemtime(get_template_directory() . $buildFilesPath . 'admin.min.css'));
     }
 
     /**
@@ -155,10 +155,10 @@ class ThemeSettings
         /*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on wcanvas Boilerplate, use a find and replace
-		 * to change 'wcanvas-boilerplate' to the name of your theme in all the template files.
+		 * If you're building a theme based on Neurocirugia Argentina, use a find and replace
+		 * to change 'neurocirugia-argentina' to the name of your theme in all the template files.
 		 */
-        load_theme_textdomain('wcanvas-boilerplate', get_template_directory() . '/languages');
+        load_theme_textdomain('neurocirugia-argentina', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -181,7 +181,7 @@ class ThemeSettings
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(
             array(
-                'main-menu' => esc_html__('Primary', 'wcanvas-boilerplate'),
+                'main-menu' => esc_html__('Primary', 'neurocirugia-argentina'),
             )
         );
 
@@ -206,7 +206,7 @@ class ThemeSettings
         add_theme_support(
             'custom-background',
             apply_filters(
-                'wcanvas_boilerplate_custom_background_args',
+                'neurocirugia_argentina_custom_background_args',
                 array(
                     'default-color' => 'ffffff',
                     'default-image' => '',

@@ -1,11 +1,11 @@
 <?php
 
 /**
- * wcanvas Boilerplate functions and definitions
+ * Neurocirugia Argentina functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package wcanvas_Boilerplate
+ * @package NEUROCIRUGIA_ARGENTINA
  */
 
 /**
