@@ -1,4 +1,4 @@
-<section class="m-video-archive js-video-modal">
+<div class="m-video-archive js-video-modal">
     <h2>Videos del Canal</h2>
     <div class="m-video-archive__container container">
         <?php AdvancedPagination::print(
@@ -25,4 +25,4 @@
             )
         ); ?>
     </div>
-</section>
+</div>

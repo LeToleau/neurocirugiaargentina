@@ -9,7 +9,7 @@
     );
 ?>
 
-<section class="m-book-archive js-book-archive">
+<div class="m-book-archive js-book-archive">
     <h2>Libros del Canal</h2>
     <div class="m-book-archive__container container">
 
@@ -37,4 +37,4 @@
             )
         ); ?>
     </div>
-</section>
+</div>

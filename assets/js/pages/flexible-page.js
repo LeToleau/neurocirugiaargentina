@@ -28,10 +28,10 @@ moduleCaller([{
         domModule: '.m-recommended-videos',
         classModule: RecommendedVideos
     },
-    {
+    /*{
         domModule: '.js-video-modal',
         classModule: VideoModal
-    },
+    },*/
     {
         domModule: '.js-featured-books',
         classModule: FeaturedBooks

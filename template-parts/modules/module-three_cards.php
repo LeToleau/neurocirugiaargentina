@@ -3,7 +3,7 @@
     $headingCopy = get_sub_field('heading_copy');
 ?>
 
-<section class="m-three-cards">
+<div class="m-three-cards">
     <div class="m-three-cards__container container">
         <div class="m-three-cards__heading">
             <h2 class="m-three-cards__title"><?= esc_html($headingTitle); ?></h2>
@@ -39,4 +39,4 @@
             ?>
         </div>
     </div>
-</section>
+</div>

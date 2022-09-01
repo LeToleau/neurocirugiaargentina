@@ -10,6 +10,7 @@ import SwiperGallery from "../app/modules/swiper_gallery";
 import RecommendedVideos from "../app/modules/recommended_videos_slider";
 import VideoModal from "../app/modules/video-modal"
 import PapersArchive from "../app/modules/papers-archive"
+import FeaturedBooks from "../app/modules/featured-books"
 
 //Dynamic js load
 moduleCaller([{
@@ -35,5 +36,9 @@ moduleCaller([{
     {
         domModule: '.js-papers-archive',
         classModule: PapersArchive
+    },
+    {
+        domModule: '.js-featured-books',
+        classModule: FeaturedBooks
     }
 ]);

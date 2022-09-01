@@ -1,3 +1,4 @@
+import VideosArchive from '../modules/videos-archive';
 import Api from './api';
 import Debounce from './debounce';
 

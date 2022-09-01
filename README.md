@@ -1,4 +1,4 @@
-wcanvas Boilerplate
+Neurocirugia Argentina
 ===
 
 This is a boilerplate starter theme for White Canvas Wordpress projects SPA.  It is not meant to be used as is, but as a starting point for custom themes
@@ -15,12 +15,12 @@ Theme Name
 Clone from gitlab. Copy the theme or upload it through WP in your local environment and then rename the folder to the project name.
 Then it is recommended to find/replace particular strings within the theme to make it client specific.  It is important to make sure you are matching on case.
 
-1. Search for: `wcanvas-boilerplate` and replace with: `custom-theme-name`.  This should catch text domain and filter/actions
-2. Search for: `wcanvas_boilerplate_` and replace with: `custom_theme_name_`.  This should catch all function declarations
-3. Search for: `wcanvasBoilerplate` and replace with: `CustomThemeName`.  This should catch all class declarations.
-4. Search for: `wcanvas_BOILERPLATE` and replace with: `CUSTOM_THEME_NAME`.  This should catch all constants.
-5. Search for: `wcanvas Boilerplate` and replace with: `Custom Theme Name`.  This should catch all strings and titles.
-6. Rename any files that have wcanvas boilerplate in the name.  Languages/wcanvas-boilerplate.pot.
+1. Search for: `neurocirugia-argentina` and replace with: `custom-theme-name`.  This should catch text domain and filter/actions
+2. Search for: `neurocirugia_argentina_` and replace with: `custom_theme_name_`.  This should catch all function declarations
+3. Search for: `neurocirugiaArgentina` and replace with: `CustomThemeName`.  This should catch all class declarations.
+4. Search for: `NEUROCIRUGIA_ARGENTINA` and replace with: `CUSTOM_THEME_NAME`.  This should catch all constants.
+5. Search for: `Neurocirugia Argentina` and replace with: `Custom Theme Name`.  This should catch all strings and titles.
+6. Rename any files that have Neurocirugia Argentina in the name.  Languages/neurocirugia-argentina.pot.
 
 After the optional renaming, these steps will get the theme ready for you to start developing.
 

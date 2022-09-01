@@ -1,0 +1,125 @@
+{
+    "key": "group_63102a2a86447",
+    "title": "Module: Featured Papers",
+    "fields": [
+        {
+            "key": "field_63102a359044c",
+            "label": "Heading",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63102a529044d",
+            "label": "Title",
+            "name": "featured_papers_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_63102a559044e",
+            "label": "Copy",
+            "name": "featured_papers_copy",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_63102b2290450",
+            "label": "Papers",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63102a589044f",
+            "label": "Select Papers",
+            "name": "featured_papers_papers",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "papers"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": 1,
+            "max": 9,
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/page-books_channel.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "templates\/page-books_channel.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1662004574
+}

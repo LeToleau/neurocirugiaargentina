@@ -8,16 +8,11 @@ class RecommendedVideos {
         this.next = module.querySelector('.js-swiper-button-next');
         this.prev = module.querySelector('.js-swiper-button-prev');
         this.navbar = document.querySelector('.b-navbar');
-
-        this.videoContainer = module.querySelector('.js-video-container');
-        this.modal = module.querySelector('.js-reco-videos-modal');
-        this.card = module.querySelectorAll('.js-card');
-        this.iframe = this.videoContainer.querySelector('iframe');
     }
 
     init() {
         this.runSlider();
-        this.runVideo();
+        this.runVideo()
     }
 
     runSlider() {
@@ -44,20 +39,24 @@ class RecommendedVideos {
     }
 
     runVideo() {
-        for(let i = 0; i < this.card.length; i++) {
-            let video = this.card[i].querySelector('.m-recommended-videos__video');
+        let card = this.module.querySelectorAll('.js-card');
+        for(let i = 0; i < card.length; i++) {
+            let videoContainer = this.module.querySelector('.js-video-container');
+            let modal = this.module.querySelector('.js-reco-videos-modal');
+            let iframe = videoContainer.querySelector('iframe');
+            let video = card[i].querySelector('.m-recommended-videos__video');
             video.addEventListener('click', () => {
                 this.module.parentNode.style.transform = 'none';
-                let videoID = this.card[i].getAttribute('data-modal');
+                let videoID = card[i].getAttribute('data-modal');
                 console.log(this.navbar);
                 this.navbar.style.zIndex = 2;
 
-                this.modal.style.display = 'block';
-                this.iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoID);
+                modal.style.display = 'block';
+                iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoID);
                 
-                this.modal.addEventListener('click', () => {
-                    this.modal.style.display = 'none';
-                    this.iframe.setAttribute('src', '');
+                modal.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                    iframe.setAttribute('src', '');
                 });
             });
         }

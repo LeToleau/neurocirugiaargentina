@@ -8,10 +8,10 @@ import Axios from 'axios';
  * using the WordPress wp_localize_script function.
  */
 const Api = Axios.create({
-    baseURL: wcanvasBoilerplate.rootapiurl,
+    baseURL: neurocirugiaArgentina.rootapiurl,
     headers: {
         'content-type': 'application/json',
-        'X-WP-Nonce': wcanvasBoilerplate.nonce
+        'X-WP-Nonce': neurocirugiaArgentina.nonce
     }
 });
 

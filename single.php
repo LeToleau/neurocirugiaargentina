@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package wcanvas_Boilerplate
+ * @package NEUROCIRUGIA_ARGENTINA
  */
 
 add_action( 'template_redirect', 'wpse_128636_redirect_post' );
