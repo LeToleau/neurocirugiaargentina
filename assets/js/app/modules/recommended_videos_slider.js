@@ -17,7 +17,6 @@ class RecommendedVideos {
 
     runSlider() {
         new Swiper(this.slider, {
-            slidesPerView: 2,
             spaceBetween: 50,
             loop: true,
             keyboard: {
@@ -35,6 +34,14 @@ class RecommendedVideos {
                 nextEl: this.next,
                 prevEl: this.prev,
             },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2
+                },
+                300: {
+                  slidesPerView: 1
+                }
+            }
         });
     }
 

@@ -7,6 +7,10 @@
         transition: all 1s;
         border-radius: 3.2px;
 
+        @include respond-below('sm') {
+            margin-bottom: 5px;
+        }
+
         &:hover {
 
             background: rgba(19, 18, 18, 0.582);
@@ -62,6 +66,12 @@
             margin-bottom: 10px;
             letter-spacing: -0.02em;
             transition: all .5s;
+
+            @include respond-below('sm') {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
 
             &:hover {
                 color: #101010;

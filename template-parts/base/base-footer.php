@@ -30,6 +30,11 @@
             <div class="g-ytsubscribe" data-channelid="UCJ2bSwtZHCuA2XZmn-NLQyw" data-layout="full"  data-theme="dark" data-count="hidden"></div>
         </div>
 
+        <div class="b-footer__copyright">
+            <p>&#174;<?= get_the_time('Y'); ?> Neurocirugía Argentina. Todos los derechos reservados.</p>
+            <p>Sitio Desarrollado por ConicDev</p>
+        </div>
+
     </div>
 
 </div>
