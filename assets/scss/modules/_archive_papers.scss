@@ -2,6 +2,11 @@
     padding-top: 120px;
     padding-bottom: 120px;
 
+    @include respond-below('sm') {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
     .container>h2 {
         font-size: 30px;
         line-height: 42px;

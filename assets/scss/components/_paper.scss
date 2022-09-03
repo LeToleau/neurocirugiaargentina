@@ -5,17 +5,30 @@
     width: 100%;
     background-color: rgb(251, 251, 251);
 
+    @include respond-below('sm') {
+        flex-direction: column;
+    }
+    
     &__img-container {
-        height: 150px;
+        min-height: 150px;
         width: 120px !important;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         background-color: rgb(157, 198, 245);
         position: relative;
         z-index: 1;
         margin-right: 30px;
+
+        @include respond-below('sm') {
+            order: 2;
+            margin: 0;
+            flex-direction: row;
+            width: 100% !important;
+            min-height: max-content;
+            padding: 10px 0;
+        }
 
         img {
             max-height: 40px;
@@ -46,6 +59,14 @@
         width: 120px;
         color: $white;
 
+        @include respond-below('sm') {
+            gap: 10px;
+
+            &:first-of-type {
+                flex-direction: column-reverse;
+            }
+        }
+
         &:hover {
             img {
                 transition: all .5s;
@@ -66,7 +87,15 @@
         flex-direction: column;
         justify-content: space-between;
         padding-left: 30px;
-        border-left: 5px solid $primary
+        border-left: 5px solid $primary;
+
+        @include respond-below('sm') {
+            padding-left: 0;
+            border-left: none;
+            padding-bottom: 30px;
+            border-bottom: 5px solid #242F9B;
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
@@ -75,11 +104,37 @@
         color: $primary;
         font-weight: 600;
         margin-bottom: 10px;
+
+        @include respond-below('sl') {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+
+        @include respond-below('sm') {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
     }
 
     &__author {
         font-size: 16px;
         font-family: $font-secondary;
         font-style: italic;
+
+        @include respond-below('sl') {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__description {
+        @include respond-below('sm') {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 0;
+        }
     }
 }

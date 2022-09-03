@@ -13,7 +13,7 @@
     }
 
     &__heading {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     &__title {
@@ -23,6 +23,11 @@
         margin-bottom: 20px;
         font-weight: 800;
         color: #3f83bf;
+
+        @include respond-below('sm') {
+            font-size: 30px;
+            line-height: 38px;
+        }
     }
 
     &__copy {
@@ -31,11 +36,13 @@
     }
 
     &__cards-repeater {
-        /*display: grid;
-        grid-template-columns: repeat(2, 40%);
-        justify-content: center;*/
         display: flex;
         justify-content: center;
+
+        @include respond-below('sm') {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
     &__card {
@@ -50,6 +57,11 @@
         @include respond-below('sl') {
             padding: 35px 20px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 14px, rgba(0, 0, 0, 0.1) 0px 4px 4px;
+        }
+
+        @include respond-below('sm') {
+            padding-top: 15px;
+            box-shadow: rgb(0 0 0 / 10%) 0px 3px 15px, rgb(0 0 0 / 10%) 0px 1px 3px;
         }
         
         &:hover {
@@ -110,6 +122,13 @@
 
             @include respond-below('sl') {
                 margin-bottom: 10px;
+            }
+        }
+
+        &__button {
+            @include respond-below('sm') {
+                width: 100%;
+                text-align: center;
             }
         }
     }

@@ -36,8 +36,14 @@ class FeaturedBooks {
                 prevEl: this.prev,
             },
             breakpoints: {
-                768: {
-                  slidesPerView: 3
+                992: {
+                    slidesPerView: 4
+                  },
+                575: {
+                  slidesPerView: 3,
+                },
+                300: {
+                    slidesPerView: 1,
                 }
             }
         });
