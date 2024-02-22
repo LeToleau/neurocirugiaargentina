@@ -1,7 +1,7 @@
 Neurocirugia Argentina
 ===
 
-This is a boilerplate starter theme for White Canvas Wordpress projects SPA.  It is not meant to be used as is, but as a starting point for custom themes
+This is a boilerplate starter theme.  It is not meant to be used as is, but as a starting point for custom themes
 for each client.  There are several pre defined modules available after installation and an ACF sync.  This theme was originally based off of [underscores](https://underscores.me).
 
 * Module starting point and examples - ACF fields, html template, SASS, Webpack, Barba JS.
